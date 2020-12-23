@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+    min-height: 75px;
+    align-items: center;
+}
+header img {
+    height: 40px;
+}
+#nav-bar {
+    width: 30%;
+}
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    padding: 10px;
+}
+#mailer, #features, #embed, #cards {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    scroll-margin-top: 100px; /*Offset so that the fixed header, doesn't cover part of the section you are trying to get to when you click on it in nav menu*/
+}
+#form h2 {
+    padding-bottom: 15px;
+}
+#form {
+    text-align: center;
+    padding-top: 150px;
+}
+#email {
+    font-size: 20px;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#submit {
+    width: 20%;
+    padding: 5px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+}
+#submit:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+.feature {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    width: 150px;
+    height: 100px;
+}
+.features-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: center;
+}
+.features-text p {
+    font-size: 15px;
+}
+.fa-fire, .fa-truck, .fa-battery-full {
+    color: aquamarine;
+}
+#embed {
+    text-align: center;
+}
+#cards {
+    display: flex;
+    justify-content: space-between;
+}
+.price {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+}
+.price .price-title {
+    background-color: rgba(232, 236, 241, 1);
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+.price .dollar {
+    padding: 15px 0px;
+}
+.price button {
+    margin: 15px 0px;
+    width: 30%;
+    padding: 5px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 2s;
+}
+.price button:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+.price ul {
+    list-style: none;
+    line-height: 1.5;
+}
+footer {
+    min-height: 75px;
+    background-color: rgba(232, 236, 241, 1);
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: end;
+    line-height: 1.5;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    display: inline;
+    padding: 0px 0px 0px 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color:#8a4234;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    #nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.5;
+    }
+    #mailer, #features, #embed, #cards {
+        width: 90%;
+        margin: 0 auto;
+        scroll-margin-top: 130px;
+    }
+    #features {
+        padding-bottom: 0px !important;
+    }
+    #form h2 {
+        font-size: 20px;
+    }
+    #email {
+        width: 80%;
+    }
+    #submit {
+        width: 40%;
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .icon {
+        display: none;
+    }
+    #embed #video {
+        width: 350px;
+        height: 200px;
+    }
+    #cards {
+        flex-direction: column;
+    }
+    .price {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer {
+        width: 100%;
+    }
+}
