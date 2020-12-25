@@ -1,10 +1,11 @@
+/* || GENERAL */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
-
+/* || HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -19,6 +20,7 @@ header {
 header img {
     height: 40px;
 }
+/* Navigation menu */
 #nav-bar {
     width: 30%;
 }
@@ -31,12 +33,14 @@ header img {
 .nav-link {
     padding: 10px;
 }
+/* || MAIN */
 #mailer, #features, #embed, #cards {
     width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
     scroll-margin-top: 100px; /*Offset so that the fixed header, doesn't cover part of the section you are trying to get to when you click on it in nav menu*/
 }
+/* Form */
 #form h2 {
     padding-bottom: 15px;
 }
@@ -61,6 +65,7 @@ header img {
     background-color: burlywood;
     cursor: pointer;
 }
+/* Features section */
 .feature {
     display: flex;
     flex-direction: row;
@@ -85,6 +90,7 @@ header img {
 .fa-fire, .fa-truck, .fa-battery-full {
     color: aquamarine;
 }
+/* Video section */
 #embed {
     text-align: center;
 }
@@ -92,6 +98,7 @@ header img {
     display: flex;
     justify-content: space-between;
 }
+/* Price section */
 .price {
     border: 1px solid black;
     text-align: center;
@@ -122,6 +129,7 @@ header img {
     list-style: none;
     line-height: 1.5;
 }
+/* || FOOTER */
 footer {
     min-height: 75px;
     background-color: rgba(232, 236, 241, 1);
@@ -138,6 +146,7 @@ footer ul li {
     display: inline;
     padding: 0px 0px 0px 20px;
 }
+/* || LINKS */
 a {
     text-decoration: none;
     color: black;
@@ -145,7 +154,7 @@ a {
 a:hover {
     color:#8a4234;
 }
-
+/* || RESPONSIVE */
 @media only screen and (max-width: 600px) {
     header {
         flex-direction: column;
