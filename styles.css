@@ -5,11 +5,18 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+body {
+    background-image: url(img/map-bg-rohan.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 /* || HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: #99b051;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,7 +25,7 @@ header {
     align-items: center;
 }
 header img {
-    height: 40px;
+    height: 90px;
 }
 /* Navigation menu */
 #nav-bar {
@@ -34,6 +41,25 @@ header img {
     padding: 10px;
 }
 /* || MAIN */
+#first {
+    width: 70%;
+    margin: 120px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#first-text {
+    line-height: 3;
+}
+#first-text h2 {
+    font-size: 35px;
+}
+#first-text p {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20px;
+}
 #mailer, #features, #embed, #cards {
     width: 70%;
     margin: 0 auto;
@@ -46,7 +72,8 @@ header img {
 }
 #form {
     text-align: center;
-    padding-top: 150px;
+    border: 5px solid #b0a351;
+    padding: 20px;
 }
 #email {
     font-size: 20px;
@@ -57,12 +84,12 @@ header img {
 #submit {
     width: 20%;
     padding: 5px;
-    background-color: aquamarine;
+    background-color: #99b051;
     border: none;
     border-radius: 5px;
 }
 #submit:hover {
-    background-color: burlywood;
+    background-color: #b0a351;
     cursor: pointer;
 }
 /* Features section */
@@ -87,12 +114,15 @@ header img {
 .features-text p {
     font-size: 15px;
 }
-.fa-fire, .fa-truck, .fa-battery-full {
-    color: aquamarine;
+.fa-music, .fa-truck, .fa-flag {
+    color: #99b051;
 }
 /* Video section */
 #embed {
     text-align: center;
+}
+#embed h2 {
+    padding-bottom: 25px;
 }
 #cards {
     display: flex;
@@ -105,9 +135,13 @@ header img {
     width: 30%;
 }
 .price .price-title {
-    background-color: rgba(232, 236, 241, 1);
+    background-color: #b0a351;
     padding: 10px 0px;
     text-transform: uppercase;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .price .dollar {
     padding: 15px 0px;
@@ -116,13 +150,13 @@ header img {
     margin: 15px 0px;
     width: 30%;
     padding: 5px;
-    background-color: aquamarine;
+    background-color: #99b051;
     border: none;
     border-radius: 5px;
     transition: background-color 2s;
 }
 .price button:hover {
-    background-color: burlywood;
+    background-color: #b0a351;
     cursor: pointer;
 }
 .price ul {
@@ -132,7 +166,7 @@ header img {
 /* || FOOTER */
 footer {
     min-height: 75px;
-    background-color: rgba(232, 236, 241, 1);
+    background-color: #b0a351;
     width: 70%;
     margin: 0 auto;
     padding: 15px;
@@ -164,10 +198,23 @@ a:hover {
         text-align: center;
         line-height: 1.5;
     }
+    #first {
+        width: 90%;
+        margin: 190px auto 30px auto;
+    }
+    #first-text {
+        line-height: 1.5;
+    }
+    #first-text h2 {
+        font-size: 25px;
+    }
+    #first-text p {
+        font-size: 15px;
+    }
     #mailer, #features, #embed, #cards {
         width: 90%;
         margin: 0 auto;
-        scroll-margin-top: 130px;
+        scroll-margin-top: 180px;
     }
     #features {
         padding-bottom: 0px !important;

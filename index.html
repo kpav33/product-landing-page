@@ -12,7 +12,8 @@
     </head>
     <body>
         <header id="header">
-            <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo" width="300" id="header-img">
+            <!--<img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo" width="300" id="header-img" style="display: none;">-->
+            <img src="img/lotr-logo.png" alt="Lord of the rings logo" width="auto" id="header-imgg">
             <nav id="nav-bar">
                 <ul>
                     <li><a class="nav-link" href="#features">Features</a></li>
@@ -22,21 +23,21 @@
             </nav>
         </header>
         <main>
-            <section id="mailer">
-                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
-                    <h2>Handcrafted, home-made masterpieces</h2>
-                    <input id="email" type="email" name="email" placeholder="Enter your email address here"><br>
-                    <input type="submit" id="submit" name="submit" value="Submit">
-                </form>
+            <section id="first">
+                <div id="first-text">
+                    <h2>The Lord of the Rings soundtrack</h2>
+                    <p>Enjoy listening to this masterpiece by Howard Shore!</p>
+                </div>
+                <img src="img/lotr-sound.jpg" alt="Lord of the rings soundtrack product image" width="30%">
             </section>
             <section id="features">
                 <div class="feature">
                     <div class="icon">
-                        <i class="fas fa-fire"></i>
+                        <i class="fas fa-music"></i>
                     </div>
                     <div class="features-text">
-                        <h2>Premium Materials</h2>
-                        <p> Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+                        <h2>Sound Quality</h2>
+                        <p>Excellent sound quality that will make you want to listen to the soundtrack over and over again.</p>
                     </div>
                 </div>
                 <div class="feature">
@@ -45,28 +46,29 @@
                     </div>
                     <div class="features-text">
                         <h2>Fast Shipping</h2>
-                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                        <p>We will ship the product to your desired destination as soon as you place and pay for your order. How long it takes for the product to reach you, depends on where you are ordering from.</p>
                     </div>
                 </div>
                 <div class="feature">
                     <div class="icon">
-                        <i class="fas fa-battery-full"></i>
+                        <i class="far fa-flag"></i>
                     </div>
                     <div class="features-text">
-                        <h2>Quality Assurance</h2>
-                        <p> For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+                        <h2>Return Policy</h2>
+                        <p>If for any reason the product doesn't achieve your expectations you can always return it to us and you will be refunded. However we doubt it that after you listen to it once, you will ever want to give it away.</p>
                     </div>
                 </div>
             </section>
             <section id="embed">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                <h2>Listen to the soundtrack!</h2>
+                <iframe width="600" height="300" src="https://www.youtube.com/embed/_SBQvd6vY9s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
             </section>
             <section id="cards">
                 <div class="price">
                     <div class="price-title">
-                        <h2>Tenor trombone</h2>
+                        <h2>The Fellowship of the Ring</h2>
                     </div>
-                    <h2 class="dollar">$600</h2>
+                    <h2 class="dollar">$100</h2>
                     <ul>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
@@ -77,9 +79,9 @@
                 </div>
                 <div class="price">
                     <div class="price-title">
-                        <h2>Bass trombone</h2>
+                        <h2>The Two Towers</h2>
                     </div>
-                    <h2 class="dollar">$900</h2>
+                    <h2 class="dollar">$80</h2>
                     <ul>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
@@ -90,9 +92,9 @@
                 </div>
                 <div class="price">
                     <div class="price-title">
-                        <h2>Valve trombone</h2>
+                        <h2>The Return of the King</h2>
                     </div>
-                    <h2 class="dollar">$1200</h2>
+                    <h2 class="dollar">$120</h2>
                     <ul>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
@@ -101,6 +103,13 @@
                     </ul>
                     <button>Select</button>
                 </div>
+            </section>
+            <section id="mailer">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                    <h2>Sign up to our Lord of the Rings updates!</h2>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address here"><br>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </form>
             </section>
         </main>
         <footer>
@@ -109,7 +118,7 @@
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <p>Copyright 2020, Original Trombones</p>
+            <p>Copyright 2020, None intended</p>
         </footer>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
