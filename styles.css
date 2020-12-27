@@ -5,6 +5,9 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url(img/map-bg-rohan.webp);
     background-repeat: no-repeat;
@@ -57,8 +60,10 @@ header img {
 }
 #first-text p {
     font-style: italic;
-    text-decoration: underline;
     font-size: 20px;
+}
+#first img {
+    width: 30%;
 }
 #mailer, #features, #embed, #cards {
     width: 70%;
@@ -74,6 +79,9 @@ header img {
     text-align: center;
     border: 5px solid #b0a351;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #email {
     font-size: 20px;
